@@ -3,12 +3,11 @@
 
 
 <img src="./icon.png" width="100" />
-<div>
+
 ![Python](https://img.shields.io/badge/Python-3.10%2B-3776ab?style=for-the-badge&logo=python&logoColor=white)
 ![OpenCV](https://img.shields.io/badge/OpenCV-4.0%2B-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
 ![Tesseract](https://img.shields.io/badge/Tesseract-OCR-FF6B35?style=for-the-badge&logo=googlefonts&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
-</div>
 
 **🚀 Advanced Python toolkit for extracting Hindi text from scanned book images**
 
