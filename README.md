@@ -1,27 +1,27 @@
 # HinTextify - Hindi OCR Extractor
 
-<div align="center">
+<p align="center">
+  <img src="./icon.png" width="120" alt="HinTextify Logo"/>
+</p>
 
-<img src="./icon.png" width="120" alt="HinTextify Logo"/>
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.10%2B-3776ab?style=for-the-badge&logo=python&logoColor=white" alt="Python 3.10+"/>
+  <img src="https://img.shields.io/badge/OpenCV-4.0%2B-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" alt="OpenCV 4.0+"/>
+  <img src="https://img.shields.io/badge/Tesseract-OCR-FF6B35?style=for-the-badge&logo=googlefonts&logoColor=white" alt="Tesseract OCR"/>
+  <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="MIT License"/>
+</p>
 
-<br>
+<p align="center">
+  <strong>🚀 Advanced Python toolkit for extracting Hindi text from scanned book images</strong>
+</p>
 
-![Python](https://img.shields.io/badge/Python-3.10%2B-3776ab?style=for-the-badge&logo=python&logoColor=white)
-![OpenCV](https://img.shields.io/badge/OpenCV-4.0%2B-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
-![Tesseract](https://img.shields.io/badge/Tesseract-OCR-FF6B35?style=for-the-badge&logo=googlefonts&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+<p align="center">
+  <em>Leveraging Tesseract OCR with intelligent OpenCV preprocessing for superior accuracy</em>
+</p>
 
-### 🚀 Advanced Python toolkit for extracting Hindi text from scanned book images
-
-*Leveraging Tesseract OCR with intelligent OpenCV preprocessing for superior accuracy*
-
-<br>
-
-<img src="./top.png" alt="HinTextify Demo" style="max-width: 100%; height: auto;"/>
-
-<br>
-
-</div>
+<p align="center">
+  <img src="./top.png" alt="HinTextify Demo" width="600"/>
+</p>
 
 ---
 
@@ -31,13 +31,25 @@ Transform your digitization workflow with **HinTextify** - a powerful OCR soluti
 
 ## ✨ Key Features
 
-| 🔤 Multi-Language Support | 🖼️ Smart Image Processing |
-|---------------------------|---------------------------|
-| • Native Hindi (Devanagari) OCR<br>• Mixed Hindi+English processing<br>• UTF-8 compliant output | • Adaptive noise reduction<br>• Intelligent binarization<br>• Contrast optimization |
+### 🔤 Multi-Language Support
+- Native Hindi (Devanagari) OCR
+- Mixed Hindi+English processing  
+- UTF-8 compliant output
 
-| ⚡ Batch Processing | 🎯 High Accuracy |
-|-------------------|-----------------|
-| • Process entire folders<br>• Preserved file naming<br>• Automated workflow | • OpenCV preprocessing pipeline<br>• Optimized for 300-600 DPI<br>• Production-ready results |
+### 🖼️ Smart Image Processing
+- Adaptive noise reduction
+- Intelligent binarization
+- Contrast optimization
+
+### ⚡ Batch Processing  
+- Process entire folders
+- Preserved file naming
+- Automated workflow
+
+### 🎯 High Accuracy
+- OpenCV preprocessing pipeline
+- Optimized for 300-600 DPI
+- Production-ready results
 
 ---
 
@@ -49,7 +61,7 @@ Transform your digitization workflow with **HinTextify** - a powerful OCR soluti
 │   ├── 🖼️ page001.jpg
 │   ├── 🖼️ page002.png
 │   └── 🖼️ ...
-├── 📂 Book_text/               # Output folder for text files
+├── 📂 Book_text/               # Output folder for text files  
 │   ├── 📄 page001.txt
 │   ├── 📄 page002.txt
 │   └── 📄 ...
@@ -63,15 +75,14 @@ Transform your digitization workflow with **HinTextify** - a powerful OCR soluti
 
 ## 🚀 Quick Start
 
-### 📋 Prerequisites
+### Prerequisites
 
 Before you begin, ensure you have:
-
 - **Python 3.10+** installed
 - **Tesseract OCR 5.0+** with Hindi language pack
 - **Git** (for cloning the repository)
 
-### 🔧 Installation
+### Installation
 
 #### Step 1: Install Tesseract OCR
 
@@ -114,7 +125,7 @@ cd HinTextify
 uv sync
 ```
 
-### 🎬 Usage
+### Usage
 
 1. **Add your images** to the `Book/` folder
 2. **Run the OCR script:**
@@ -145,7 +156,7 @@ language = 'hin+eng'  # Hindi + English
 
 ## 📊 Performance Guidelines
 
-### 📷 Image Quality Recommendations
+### Image Quality Recommendations
 
 | Parameter | Recommended Value | Impact |
 |-----------|------------------|--------|
@@ -154,11 +165,9 @@ language = 'hin+eng'  # Hindi + English
 | **Color** | Grayscale | Faster processing |
 | **File Size** | < 10MB | Optimal memory usage |
 
-### 🔄 Processing Pipeline
+### Processing Pipeline
 
-```
-📷 Input Image → 🔍 Preprocessing → 📊 Grayscale → 🧹 Noise Removal → ⚫ Binarization → 🔤 OCR → 📝 Output Text
-```
+**Input Image** → **Preprocessing** → **Grayscale Conversion** → **Noise Removal** → **Binarization** → **OCR Processing** → **Text Output**
 
 ---
 
@@ -174,11 +183,11 @@ config = {
 }
 ```
 
-### Example 2: Mixed Language Documents  
+### Example 2: Mixed Language Documents
 ```python
 # Configure for Hindi + English mixed content
 config = {
-    'lang': 'hin+eng',
+    'lang': 'hin+eng', 
     'psm': 3,  # Automatic page segmentation
     'oem': 1
 }
@@ -190,7 +199,7 @@ config = {
 ```
 Book/
 ├── chapter01_page001.jpg
-├── chapter01_page002.jpg  
+├── chapter01_page002.jpg
 ├── chapter02_page001.png
 └── manuscript_page045.tiff
 ```
@@ -200,7 +209,7 @@ Book/
 Book_text/
 ├── chapter01_page001.txt ✅ (2.3KB)
 ├── chapter01_page002.txt ✅ (1.8KB)
-├── chapter02_page001.txt ✅ (2.1KB) 
+├── chapter02_page001.txt ✅ (2.1KB)
 └── manuscript_page045.txt ✅ (2.7KB)
 ```
 
@@ -229,7 +238,7 @@ wget https://github.com/tesseract-ocr/tessdata/raw/main/hin.traineddata
 def enhance_image_quality(image):
     # Increase contrast and brightness
     alpha = 1.5  # Contrast control
-    beta = 0     # Brightness control  
+    beta = 0     # Brightness control
     return cv2.convertScaleAbs(image, alpha=alpha, beta=beta)
 ```
 
@@ -240,8 +249,8 @@ def enhance_image_quality(image):
 We welcome contributions! Here's how you can help:
 
 - 🐛 **[Report Bugs](../../issues)**
-- 💡 **[Request Features](../../issues)**  
-- 📖 **Improve Documentation**
+- 💡 **[Request Features](../../issues)**
+- 📖 **Improve Documentation** 
 - 🧪 **Add Tests**
 
 ### Development Setup
@@ -254,7 +263,7 @@ cd HinTextify
 # Create feature branch
 git checkout -b feature/your-feature-name
 
-# Install dev dependencies  
+# Install dev dependencies
 pip install -r requirements-dev.txt
 
 # Make changes and test
@@ -276,21 +285,23 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 🙏 Acknowledgments
 
 - **[Tesseract OCR](https://github.com/tesseract-ocr/tesseract)** - Google's powerful OCR engine
-- **[OpenCV](https://opencv.org/)** - Computer vision and image processing library
+- **[OpenCV](https://opencv.org/)** - Computer vision and image processing library  
 - **[Python Community](https://www.python.org/)** - Amazing programming language and ecosystem
 
 ---
 
 ## 📞 Support & Contact
 
-<div align="center">
+<p align="center">
+  <a href="../../stargazers"><img src="https://img.shields.io/badge/⭐-Star%20this%20repo-yellow?style=for-the-badge" alt="Star this repo"/></a>
+  <a href="../../issues"><img src="https://img.shields.io/badge/🐛-Report%20Bug-red?style=for-the-badge" alt="Report Bug"/></a>
+  <a href="../../issues"><img src="https://img.shields.io/badge/💡-Request%20Feature-blue?style=for-the-badge" alt="Request Feature"/></a>
+</p>
 
-[![⭐ Star this repo](https://img.shields.io/badge/⭐-Star%20this%20repo-yellow?style=for-the-badge)](../../stargazers)
-[![🐛 Report Bug](https://img.shields.io/badge/🐛-Report%20Bug-red?style=for-the-badge)](../../issues)
-[![💡 Request Feature](https://img.shields.io/badge/💡-Request%20Feature-blue?style=for-the-badge)](../../issues)
+<p align="center">
+  <strong>Made with ❤️ for the Hindi digitization community</strong>
+</p>
 
-### Made with ❤️ for the Hindi digitization community
-
-**Happy OCR Processing! 📚 ➡️ 📝**
-
-</div>
+<p align="center">
+  <strong>Happy OCR Processing! 📚 ➡️ 📝</strong>
+</p>
