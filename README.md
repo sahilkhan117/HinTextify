@@ -233,18 +233,6 @@ PREPROCESSING_ENABLED = True
 | **Color Mode** | Grayscale | Reduces processing time |
 | **File Size** | < 10MB | For optimal memory usage |
 
-### Processing Pipeline
-
-```mermaid
-graph LR
-    A[📷 Input Image] --> B[🔍 Preprocessing]
-    B --> C[📊 Grayscale Conversion]
-    C --> D[🧹 Noise Reduction]
-    D --> E[⚫ Binarization]
-    E --> F[🔤 OCR Processing]
-    F --> G[📝 Text Output]
-```
-
 ---
 
 ## 📈 Usage Examples
