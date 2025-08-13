@@ -281,40 +281,6 @@ Book_text/
 
 ---
 
-## 🔧 Troubleshooting
-
-<details>
-<summary><strong>❌ Common Issues & Solutions</strong></summary>
-
-### Issue 1: Tesseract Not Found
-```bash
-# Error: TesseractNotFoundError
-# Solution: Update tesseract path in main.py
-pytesseract.pytesseract.tesseract_cmd = r"ACTUAL_PATH_TO_TESSERACT"
-```
-
-### Issue 2: Hindi Language Pack Missing
-```bash
-# Error: TesseractError: (2, 'Usage: tesseract...')
-# Solution: Download hindi traineddata
-wget https://github.com/tesseract-ocr/tessdata/raw/main/hin.traineddata
-# Place in: tesseract/tessdata/hin.traineddata
-```
-
-### Issue 3: Poor OCR Accuracy
-```python
-# Solution: Adjust preprocessing parameters
-def enhance_image_quality(image):
-    # Increase contrast
-    alpha = 1.5  # Contrast
-    beta = 0     # Brightness
-    return cv2.convertScaleAbs(image, alpha=alpha, beta=beta)
-```
-
-</details>
-
----
-
 ## 🤝 Contributing
 
 We welcome contributions from the community! Here's how you can help:
@@ -325,25 +291,6 @@ We welcome contributions from the community! Here's how you can help:
 |-------------------|------------------------|---------------------|---------------|
 
 </div>
-
-### Development Setup
-
-```bash
-# Fork and clone the repository
-git clone https://github.com/yourusername/hindi-book-ocr.git
-cd hindi-book-ocr
-
-# Create development branch
-git checkout -b feature/your-feature-name
-
-# Install development dependencies
-pip install -r requirements-dev.txt
-
-# Make your changes and test
-python -m pytest tests/
-
-# Submit pull request
-```
 
 ---
 
