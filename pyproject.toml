@@ -1,0 +1,12 @@
+[project]
+name = "hindi-book-ocr"
+version = "0.1.0"
+description = "Extract Unicode Hindi text from scanned book images with OCR and preprocessing"
+readme = "README.md"
+requires-python = ">=3.10"
+
+dependencies = [
+    "pytesseract",
+    "pillow",
+    "opencv-python"
+]
